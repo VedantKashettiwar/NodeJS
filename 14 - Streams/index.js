@@ -9,7 +9,7 @@ server.on("request", (req, res) => {
   //     if(err) return console.error(err);
   //     res.end(data.toString());
   // });
-//   const rstream = fs.createReadStream("index.txt");
+  // const rstream = fs.createReadStream("index.txt");
 
 //2nd way
 //   rstream.on("data", (chunkdata) => {
@@ -25,8 +25,8 @@ server.on("request", (req, res) => {
 
 
     //3rd way
-    const rstream = fs.createReadStream("index.txt");
-    rstream.pipe(res);
+    // const rstream = fs.createReadStream("index.txt");
+    // rstream.pipe(res);
 
 });
 server.listen(8000, () => {});
